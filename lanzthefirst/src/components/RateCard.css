@@ -1,0 +1,93 @@
+.rate-section {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.rate-subtitle {
+  margin-bottom: 30px;
+  color: #d6d6d6;
+}
+
+.rate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rate-card {
+  background-color: #4F4F51;
+  padding: 30px 25px;
+  border-radius: 24px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.rate-card h3 {
+  color: #f2c4ce;
+  margin-bottom: 8px;
+}
+
+.best-for {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #d6d6d6;
+  opacity: 0.9;
+}
+
+.rate-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.rate-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.timeline {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #d6d6d6;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f58f7c;
+}
+
+.popular {
+  border: 2px solid #f58f7c;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #f58f7c;
+  color: #2C2B30;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.custom-note {
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.custom-note a {
+  color: #f58f7c;
+  font-weight: 600;
+}
