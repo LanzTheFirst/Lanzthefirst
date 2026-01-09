@@ -2,79 +2,111 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(12px);
-  background: rgba(44, 43, 48, 0.9);
-  border-bottom: 1px solid #4F4F51;
+  backdrop-filter: blur(15px);
+  background: rgba(44, 43, 48, 0.85); /* Slightly more transparent */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   width: 100%;
 }
 
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 32px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .nav-logo {
-  font-size: 1.45rem;
-  font-weight: 700;
+  font-size: 1.4rem;
   color: #f2c4ce;
-  letter-spacing: 0.6px;
   font-family: "Great Vibes", cursive;
+  cursor: pointer;
 }
 
 .nav-links {
   display: flex;
-  gap: 44px; 
+  align-items: center;
+  gap: 40px;
   list-style: none;
 }
 
 .nav-links a {
-  position: relative;
+  text-decoration: none;
   color: #d6d6d6;
   font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -7px;
-  width: 0%;
-  height: 2px;
-  background-color: #f58f7c;
-  transition: width 0.3s ease;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #f2f2f2;
+  color: #f58f7c;
 }
 
-.nav-links a:hover::after {
-  width: 100%;
+/* Call to Action Button in Nav */
+.nav-btn {
+  background: linear-gradient(135deg, #f2c4ce, #f58f7c);
+  color: #2C2B30 !important;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 700 !important;
+  font-size: 0.85rem !important;
 }
 
-@media (max-width: 768px) {
-  .nav-inner {
-    flex-direction: column; 
-    align-items: center;
-    padding: 18px 16px;
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 143, 124, 0.3);
+}
+
+/* Mobile Menu Toggle (Hamburger) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: #f2c4ce;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: flex;
   }
 
+  /* Hamburger to 'X' animation */
+  .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+  .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
   .nav-links {
-    flex-direction: row; 
-    gap: 18px; 
-    width: 100%;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden by default */
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    background: #2C2B30;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 15px;
+    gap: 30px;
+    transition: 0.4s ease-in-out;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  }
+
+  .nav-links.active {
+    right: 0; /* Slides in */
   }
 
   .nav-links a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

@@ -6,46 +6,46 @@ export default function Header() {
     <header id="header" className="header">
       <div className="header-inner">
         <div className="intro-image">
-          <img
-            src={lanzthefirst}
-            alt="LanzTheFirst"
-            className="hero-image"
-          />
+          <div className="image-wrapper">
+            <img
+              src={lanzthefirst}
+              alt="Olanrewaju - Website Developer"
+              className="hero-image"
+            />
+            <div className="availability-badge">
+              <span className="dot"></span> Available for projects
+            </div>
+          </div>
         </div>
 
         <div className="intro-content">
-          <span className="brand">LanzTheFirst</span>
+          <span className="brand-label">LanzTheFirst</span>
 
           <h1>
-            Hi, I’m <span>Olanrewaju</span> 👋 <br />
-            I build modern React websites that actually work.
+            I build websites that <span>turn your visitors</span> into customers.
           </h1>
 
           <p className="intro-text">
-            I’m a React Developer focused on building fast, responsive,
-            and visually clean websites that feel smooth and professional
-            on every device.
+            Hi, I’m <strong>Olanrewaju</strong>. I help businesses and individuals 
+            create professional online spaces that are fast, easy to use, and 
+            look great on every screen.
           </p>
 
           <ul className="value-list">
-            <li>⚡ Fast-loading & performance-focused</li>
-            <li>📱 Fully responsive across devices</li>
-            <li>✨ Clean UI with smooth interactions</li>
-            <li>🎯 Built to convert visitors into action</li>
+            <li><span>🚀</span> Fast & smooth to keep people on your page</li>
+            <li><span>📱</span> Works perfectly on every mobile phone</li>
+            <li><span>🎨</span> Modern design that fits your brand</li>
+            <li><span>✅</span> Simple, clear, and easy to navigate</li>
           </ul>
-
-          <p className="closing-text">
-            From landing pages to full web apps, every project is built
-            intentionally - no templates, no shortcuts.
-          </p>
 
           <div className="header-actions">
             <a
-              href="https://calendly.com/oluwaseyiifelowo/30min"
+              href="https://calendly.com/lanzthefirst/30min"
               target="_blank"
+              rel="noreferrer"
               className="primary-btn"
             >
-              Book a Call
+              Start Your Project
             </a>
 
             <a href="#portfolio" className="secondary-btn">

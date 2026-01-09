@@ -1,0 +1,129 @@
+.services-section {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.services-subtitle {
+  margin-bottom: 40px;
+  color: #d6d6d6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #4F4F51;
+  padding: 40px 25px;
+  border-radius: 24px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h3 {
+  color: #f2c4ce;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.focus-area {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: #f58f7c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card ul li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #efefef;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Adds a small bullet point */
+.service-card ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #f58f7c;
+}
+
+.featured {
+  border: 2px solid #f58f7c;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #f58f7c;
+  color: #2C2B30;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.contact-note {
+  margin-top: 50px;
+  font-size: 1.1rem;
+}
+
+.contact-note a {
+  color: #f58f7c;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.contact-note a:hover {
+  border-bottom: 2px solid #f58f7c;
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding: 0px 16px 20px;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .focus-area {
+    font-size: 0.75rem;
+  }
+
+  .service-card ul li {
+    font-size: 0.9rem;
+  }
+}

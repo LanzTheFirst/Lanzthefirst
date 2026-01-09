@@ -4,23 +4,32 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <h3>LanzTheFirst</h3>
+        <h3 className="footer-logo">LanzTheFirst</h3>
 
-        <p>
-          React Developer building modern, responsive websites
-          with clarity and performance in mind.
+        <p className="footer-bio">
+          I help small businesses and creators build fast, professional websites 
+          that turn visitors into customers. 
         </p>
 
-        <div className="footer-links">
+        <nav className="footer-links" aria-label="Footer Navigation">
           <a href="#header">Home</a>
-          <a href="#portfolio">Work</a>
-          <a href="#rates">Rates</a>
-          <a href="#contact">Contact</a>
+          <a href="#portfolio">My Work</a>
+          <a href="#services">Services</a> {/* Updated from Rates */}
+          <a href="#contact">Get In Touch</a>
+        </nav>
+
+        <div className="footer-socials">
+          <a href="https://www.threads.com/@lanzthefirst" target="_blank" rel="noreferrer">Threads</a>
+          <a href="https://x.com/Lanz_xyz_" target="_blank" rel="noreferrer">Twitter</a>
+          <a href="https://calendly.com/lanzthefirst/30min" target="_blank" rel="noreferrer">Calendly</a>
         </div>
 
-        <span className="copyright">
-          © {new Date().getFullYear()} LanzTheFirst. All rights reserved.
-        </span>
+        <div className="footer-bottom">
+          <span className="copyright">
+            © {new Date().getFullYear()} LanzTheFirst. All rights reserved.
+          </span>
+          <p className="footer-status">Available for new projects</p>
+        </div>
       </div>
     </footer>
   );
