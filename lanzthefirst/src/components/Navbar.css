@@ -1,17 +1,20 @@
 .navbar {
-  position: sticky;
+  position: fixed;          /* 🔥 FIXED, not sticky */
   top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(15px);
-  background: rgba(44, 43, 48, 0.85); /* Slightly more transparent */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  left: 0;
   width: 100%;
+  z-index: 1000;
+
+  backdrop-filter: blur(15px);
+  background: rgba(44, 43, 48, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 12px 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +46,7 @@
   color: #f58f7c;
 }
 
-/* Call to Action Button in Nav */
+/* Call to Action Button */
 .nav-btn {
   background: linear-gradient(135deg, #f2c4ce, #f58f7c);
   color: #2C2B30 !important;
@@ -58,7 +61,7 @@
   box-shadow: 0 5px 15px rgba(245, 143, 124, 0.3);
 }
 
-/* Mobile Menu Toggle (Hamburger) */
+/* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -82,28 +85,38 @@
     display: flex;
   }
 
-  /* Hamburger to 'X' animation */
-  .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-  .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
-  .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden by default */
+    right: -100%;
     width: 70%;
     height: 100vh;
     padding-top: 80px;
+
     background: #2C2B30;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+
     transition: 0.4s ease-in-out;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 999; /* stays under navbar */
   }
 
   .nav-links.active {
-    right: 0; /* Slides in */
+    right: 0;
   }
 
   .nav-links a {

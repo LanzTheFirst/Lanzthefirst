@@ -15,7 +15,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="portfolio-section">
       <div className="portfolio-container">
-        <h2>Selected Work</h2>
+        <h2>Portfolio Showcase</h2>
         <p className="portfolio-intro">
           A collection of projects built with a focus on <strong>speed, ease of use,</strong> and <strong>professional design.</strong>
         </p>
