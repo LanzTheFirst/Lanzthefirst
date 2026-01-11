@@ -3,78 +3,78 @@ import "./Services.css";
 export default function Services() {
   return (
     <section id="services" className="services-section">
-      <h2>What I Offer</h2>
+      <h2>What I Can Build For You</h2>
       <p className="services-subtitle">
-        Specialized React development to help you build fast, accessible, and high-converting web experiences.
+        Clean, modern websites built to look great, load fast, and help you get real results online.
       </p>
 
       <div className="services-grid">
         <div className="service-card">
           <h3>Starter Landing Page</h3>
-          <span className="focus-area">Best for: Lead generation & personal brands</span>
+          <span className="focus-area">Best for: Personal brands, startups & lead capture</span>
           <ul>
-            <li>1-page responsive landing page</li>
-            <li>Modern React UI with smooth animations</li>
-            <li>Mobile, tablet & desktop optimization</li>
-            <li>Contact form & lead capture integration</li>
-            <li>Basic SEO & Meta tag setup</li>
-            <li>Deployment & hosting configuration</li>
+            <li>Single-page, fully responsive website</li>
+            <li>Modern, clean design that works on all devices</li>
+            <li>Clear layout focused on conversions</li>
+            <li>Contact form or lead capture setup</li>
+            <li>Basic search engine setup (Google-friendly)</li>
+            <li>Website deployment & setup</li>
           </ul>
         </div>
 
         <div className="service-card">
-          <h3>Standard Website</h3>
+          <h3>Standard Business Website</h3>
           <span className="focus-area">Best for: Small businesses & portfolios</span>
           <ul>
-            <li>3–5 page structured website</li>
-            <li>Consistent brand-focused design</li>
-            <li>Optimized navigation & user flow</li>
-            <li>Integration with CMS or Markdown for content</li>
-            <li>Performance-tuned React components</li>
+            <li>3–5 page website (Home, About, Services, Contact)</li>
+            <li>Consistent branding and professional layout</li>
+            <li>Easy-to-navigate structure</li>
+            <li>Fast loading performance</li>
+            <li>Simple content management options</li>
           </ul>
         </div>
 
         <div className="service-card featured">
-          <span className="badge">Most Requested</span>
-          <h3>Professional Web Applications</h3>
-          <span className="focus-area">Best for: Scaling startups & SaaS</span>
+          <span className="badge">Most Popular</span>
+          <h3>Advanced Website / Web App</h3>
+          <span className="focus-area">Best for: Growing startups & platforms</span>
           <ul>
-            <li>Full multi-page architecture</li>
-            <li>Advanced UI interactions (Framer Motion)</li>
-            <li>State management (Redux/Zustand)</li>
-            <li>API integration & data fetching</li>
-            <li>Authentication & protected routes</li>
-            <li>Comprehensive performance optimization</li>
+            <li>Multi-page or dashboard-style website</li>
+            <li>Interactive features and smooth user experience</li>
+            <li>Login systems and user accounts</li>
+            <li>Connection to external tools or APIs</li>
+            <li>Optimized for speed, scale, and reliability</li>
           </ul>
         </div>
 
         <div className="service-card">
-          <h3>E-commerce Solutions</h3>
-          <span className="focus-area">Best for: Modern storefronts</span>
+          <h3>Simple E-commerce Website</h3>
+          <span className="focus-area">Best for: Online stores without complex systems</span>
           <ul>
-            <li>Product listing & dynamic detail pages</li>
-            <li>Secure shopping cart functionality</li>
-            <li>Payment gateway integration (Stripe/Paystack)</li>
-            <li>Automated email order notifications</li>
-            <li>Inventory management via headless CMS</li>
+            <li>Product listing and product pages</li>
+            <li>Shopping cart functionality</li>
+            <li>Secure payment integration (Stripe, Paystack, etc.)</li>
+            <li>Order confirmation and email notifications</li>
+            <li>Store management handled via third-party tools</li>
           </ul>
         </div>
 
         <div className="service-card">
-          <h3>UI/UX Refinement</h3>
-          <span className="focus-area">Best for: Existing React projects</span>
+          <h3>Website Improvements & Redesign</h3>
+          <span className="focus-area">Best for: Existing websites that need polishing</span>
           <ul>
-            <li>Modernizing outdated interfaces</li>
-            <li>Improving Core Web Vitals (Speed)</li>
-            <li>Accessibility (A11y) audits & fixes</li>
-            <li>Converting Figma designs to clean React code</li>
-            <li>Component library development</li>
+            <li>Refreshing outdated designs</li>
+            <li>Improving website speed and usability</li>
+            <li>Fixing layout or mobile issues</li>
+            <li>Turning designs into functional pages</li>
+            <li>Cleaning up and organizing code</li>
           </ul>
         </div>
       </div>
 
       <p className="contact-note">
-        Have a specific project in mind? <a href="#contact">Let’s hop on a call</a> to discuss your requirements.
+        Not sure which option fits your needs?{" "}
+        <a href="#contact">Let’s talk</a> and figure it out together.
       </p>
     </section>
   );
